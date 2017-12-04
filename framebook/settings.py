@@ -30,7 +30,7 @@ SECRET_KEY = 'i0z%t4y8o&4oo9+!h$9s8*_3u02x*xb3h_d6()yg%w6^v0crw='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['framebook.herokuapp.com']
 
 
 # Application definition
