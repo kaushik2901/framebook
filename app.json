@@ -1,0 +1,16 @@
+{
+  "name": "framebook",
+  "description": "An itroductory app which takes data from facebook with facebook sdk and graph api.",
+  "image": "heroku/python",
+  "repository": "https://github.com/kaushik2901/framebook",
+  "keywords": ["python", "django" ],
+  "addons": [],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python manage.py collectstatic --noinput",
+        "test": "python manage.py test"
+      }
+    }
+  }
+}
