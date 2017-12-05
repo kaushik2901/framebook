@@ -23,9 +23,17 @@
       <script
         src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
       </script>
+      <script>
+        window.onload = function() {
+         document.getElementById('loader').style.display = "none"; 
+        }
+      </script>
   </head>
   <body>
     <div id="fb-root"></div>
+    <div style="position:fixed;z-index:800;widht:100%;height:100vh;" id="loader">
+      <h4>LOADING..</h4>
+    </div>
     <script>
 
       window.fbAsyncInit = function() {
@@ -117,8 +125,6 @@
         FB.getLoginStatus(function(response) {
           if (response.status === 'connected') {
                 FB.logout(function(response) {
-                    // this part just clears the $_SESSION var
-                    // replace with your own code
                     checkLoginState();
                 });
             }
